@@ -1,0 +1,57 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#dataContainer{
+  width: 50%;
+}
+#searchBar{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+#errorMsg{
+  text-align: center;
+}
+#playerCode, #searchButton{
+  padding: 5px 10px;
+}
+#playerCode{
+  width: 50%;
+}
+#searchButton{
+  border: none;
+  background-color: black;
+  color: white;
+}
+#imgContainer, #keysCont, #valuesCont{
+  float: left;
+}
+#imgContainer{
+  width: 50%;
+}
+#imgContainer img{
+  max-width: 100%;
+}
+#keysCont{
+  width: 25%;
+}
+#valuesCont{
+  width: 25%;
+}
+#keysCont li, #valuesCont li{
+  list-style-type: none;
+  margin: 15px 0;
+}
+#floatContainer::after{
+  content: "";
+  display: table;
+  clear: both;
+}
